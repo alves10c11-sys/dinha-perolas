@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinha Pérolas | Havaianas Customiza</title>
+  <meta name="description" content="Havaianas customizadas com pérolas, feitas à mão. Modelos exclusivos para noivas, presentes e eventos. Entregamos para todo o Brasil.">
+
+  <!-- Fontes (as mesmas do projeto original) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Faixa de aviso -->
+  <div class="topbar">
+    <span>✨ Ateliê Dinha Pérolas — Havaianas Customizadas Sob Medida</span>
+    
+  </div>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container header__inner">
+
+    <!-- Cole este botão dentro de <header class="header">, logo antes da logo -->
+<button id="mobile-menu-btn" class="btn-sanduiche" type="button" aria-label="Abrir menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+    <!-- COLOQUE SUA LOGO EM: img/logo.png -->
+    <img  class="brand__logo"src="img/logo.png" alt="logo"> 
+</a>
+  <nav class="nav" aria-label="Menu principal">
+        <a href="#inicio" class="is-active">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#colecao-noivas">Noivas &amp; Eventos</a>
+        <a href="#sobre">Sobre Dinha</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__tools">
+        <div class="search search--desktop">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" id="catalog-search" placeholder="Buscar modelo..." aria-label="Buscar modelo">
+        </div>
+
+        <button id="open-cart-btn" class="icon-btn cart-btn" type="button" aria-label="Abrir carrinho">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cart-badge" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobile" hidden>
+      <div class="search search--mobile">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" id="mobile-search" placeholder="Buscar Havaianas..." aria-label="Buscar Havaianas">
+      </div>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#colecao-noivas">Coleção Noivas</a>
+      <a href="#sobre">Sobre Dinha</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato &amp; Encomenda</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill"><i class="fa-solid fa-gem"></i> Ateliê Artesanal Exclusivo Dinha Pérolas </span>
+          <h1>Elegância e Delicadeza <br class="br-desktop"><span class="script">A Cada Passo</span></h1>
+          <p>Chinelos Havaianas originais customizados à mão com pérolas premium, cristais e bordados exclusivos. Transformando o seu conforto em uma joia para casamentos e momentos inesquecíveis.</p>
+          <div class="hero__actions">
+           
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Destaque da semana">
+          <div class="hero__media">
+            <!-- IMAGEM DESTAQUE: img/destaque.jpg -->
+            <img src="img/destaque da semana.jpg" alt="Havaiana Noiva Imperial Pérolas" onerror="this.style.display='none'">
+            <span class="tag tag--gold">✨ Destaque da Semana</span>
+          </div>
+          <div class="hero__info">
+            <div>
+              <h3>Havaiana Noiva Imperial Pérolas</h3>
+              <p>Bordado artesanal com cristais de vidro</p>
+            </div>
+            <div class="price-box">
+              <s>R$ 150,00</s>
+              <strong>R$ 130,90</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="section container">
+      <header class="section__head">
+        <span class="eyebrow">Catálogo</span>
+        <h2>Nossos Modelos Exclusivos</h2>
+        <div class="divider"></div>
+        <p>Cada par é produzido sob encomenda, com acabamento artesanal.</p>
+      </header>
+
+      <div class="filters" id="store-category-filters" role="group" aria-label="Filtrar por categoria">
+        <button type="button" class="chip is-active" data-category="all" aria-pressed="true">Todos os Modelos</button>
+        <button type="button" class="chip" data-category="Infantil" aria-pressed="false">Infantil</button>
+        <button type="button" class="chip" data-category="Exclusivos" aria-pressed="false">Exclusivos</button>
+        <button type="button" class="chip" data-category="Delicados" aria-pressed="false">Delicados</button>
+        <button type="button" class="chip" data-category="Adulto/Infantil" aria-pressed="false">Adulto/Infantil</button>
+      </div>
+
+      <div id="product-grid" class="product-grid">
+
+        <!-- PRODUTO 1 -->
+        <article class="card" data-id="DP-001" data-name="Havaiana Noiva Imperial" data-category="Delicados" data-price="130.90" data-badge="Mais Vendido" data-sizes="33/34,35/36,37/38,39/40">
+          <div class="card__media">
+            <img src="img/imperial.png" alt="Havaiana Noiva Imperial" loading="lazy" onerror="this.style.display='none'">
+            <span class="tag">Mais Vendido</span>
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Delicados</span>
+            <h3>Havaiana Noiva Imperial</h3>
+            <p class="card__desc">Chinelos Havaianas originais bordados com pérolas marfim ABS e pedras de cristais nobres. Conforto inigualável para noivas e festas.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false">39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><s>R$ 150,00</s><strong>R$ 130,90</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 2 -->
+        <article class="card" data-id="DP-002" data-name="Havaiana Floral Rosa Seco" data-category="Delicados" data-price="100.00" data-badge="Delicado" data-sizes="35/36,37/38,39/40">
+          <div class="card__media">
+            <img src="img/serena.png" alt="Havaiana Floral Rosa Seco" loading="lazy" onerror="this.style.display='none'">
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Delicados</span>
+            <h3>Havaiana Azul Serena</h3>
+            <p class="card__desc">Aplicação de pérolas em tons de azul e branco, inspirados na delicadeza e sofisticação do modelo Azul Serena, traz um toque de suavidade e charme para quem procura um calçado sofisticado e cheio de personalidade.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false" disabled title="Indisponível">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false">39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false" disabled title="Indisponível">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><strong>R$ 100,00</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 -->
+        <article class="card" data-id="DP-003" data-name="Havaiana Ouro & Luxo Cristais" data-category="Exclusivos" data-price="98.90" data-badge="Destaque" data-sizes="33/34,35/36,37/38,39/40,41/42">
+          <div class="card__media">
+            <img src="img/luxo.png" alt="Havaiana Ouro e Luxo" loading="lazy" onerror="this.style.display='none'">
+            <span class="tag">Destaque</span>
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Exclusivos</span>
+            <h3>Havaiana Ouro &amp; Luxo</h3>
+            <p class="card__desc">Banhada em elegância com manta de strass dourada de altíssima densidade e pérolas banhadas.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false">39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><strong>R$ 98,90</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <!-- PRODUTO 4 -->
+        <article class="card" data-id="DP-004" data-name="Havaiana Nude Imperial" data-category="Delicados" data-price="90.00" data-badge="Destaque" data-sizes="33/34,35/36,37/38,39/40,41/42">
+          <div class="card__media">
+          <div class="card__media">
+            <img src="img/foto.png" alt="Havaiana Nude Imperial" loading="lazy" onerror="this.style.display='none'">
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Delicados</span>
+            <h3>HavaianaNude Imperial</h3>
+            <p class="card__desc">A combinação da base clara e correias em tom nude/cobre com a flor lateral gigante em pérolas rendadas e a aplicação de pérolas peroladas é incrivelmente sofisticada e delicada.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false" >39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false" disabled title="Indisponível">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><strong>R$ 90,00</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <!-- PRODUTO 5 -->
+        <article class="card" data-id="DP-005" data-name="Havaiana Pérola Negra" data-category="Exclusivos" data-price="80.00" data-badge="Exclusivos" data-sizes="33/34,35/36,37/38,39/40,41/42">
+          <div class="card__media">
+            <img src="img/negra.png" alt="" loading="lazy" onerror="this.style.display='none'">
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Exclusivos</span>
+            <h3>Havaiana Pérola Negra</h3>
+            <p class="card__desc">O contraste da base e pérolas pretas com os miolos perolados em tom dourado traz um visual muito elegante, moderno e noturno.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false" disabled title="Indisponível">39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false" disabled title="Indisponível">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><strong>R$ 80,00</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+ <!-- PRODUTO 6 -->
+         <article class="card" data-id="DP-006" data-name="Havaiana Princesa Pink" data-category="Adulto" data-price="89.90" data-badge="Promoção" data-sizes="33/34,35/36,37/38">
+          <div class="card__media">
+            <img src="img/cerejeira.png" alt="Havaiana Flor de Cerejeira" loading="lazy" onerror="this.style.display='none'">
+            <span class="tag">Promoção</span>
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Delicados</span>
+            <h3>Havaiana Princesa Flor de Cerejeira</h3>
+            <p class="card__desc">A combinação da sola e tiras num tom nude/rose com o trabalho de florzinhas em pérolas rosa e brancas — com o detalhe super especial de rosas esculpidas no miolo e pontos de brilho na sola — traz uma suavidade e elegância ímpares.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="23/24" aria-pressed="false"disabled title="Indisponível">33/34</button>
+                <button type="button" class="size" data-size="25/26" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="27/28" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="29/30" aria-pressed="false">39/40</button>
+                <button type="button" class="size" data-size="31/32" aria-pressed="false">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><s>R$ 99,90</s><strong>R$ 89,90</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- PRODUTO 6 -->
+
+         <article class="card" data-id="DP-007" data-name="Havaiana Infantil" data-category="Infantil" data-price="80.00" data-badge="Infantil" data-sizes="23/24,25/26,27/28,29/30,31/32">
+          <div class="card__media">
+            <img src="img/doce.png" alt="Havaiana Infantil" loading="lazy" onerror="this.style.display='none'">
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Infantil</span>
+            <h3>Havaiana Doce Primavera</h3>
+            <p class="card__desc">O contraste da base e pérolas pretas com os miolos perolados em tom dourado traz um visual muito elegante, moderno e noturno.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="23/24" aria-pressed="false">23/24</button>
+                <button type="button" class="size" data-size="25/26" aria-pressed="false">25/26</button>
+                <button type="button" class="size" data-size="27/28" aria-pressed="false">27/28</button>
+                <button type="button" class="size" data-size="29/30" aria-pressed="false" disabled title="Indisponível">29/30</button>
+                <button type="button" class="size" data-size="31/32" aria-pressed="false" disabled title="Indisponível">31/32</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><strong>R$ 80,00</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+         
+        <!-- PRODUTO 7 -->
+         <article class="card" data-id="DP-008" data-name="Havaiana Princesa Pink" data-category="Infantil" data-price="89.90" data-badge="Promoção" data-sizes="33/34,35/36,37/38">
+          <div class="card__media">
+            <img src="img/rosa.png" alt="Havaiana Princesa Pink" loading="lazy" onerror="this.style.display='none'">
+            <span class="tag">Promoção</span>
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Delicados</span>
+            <h3>Havaiana Princesa Pink</h3>
+            <p class="card__desc">Esta peça é super vibrante, alegre e cheia de estilo, combinando a estampa floral colorida e retro com um laço volumoso e deslumbrante em pérolas cor-de-rosa pink e um centro com strass brilhante.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="23/24" aria-pressed="false"disabled title="Indisponível">23/24</button>
+                <button type="button" class="size" data-size="25/26" aria-pressed="false"disabled title="Indisponível">25/26</button>
+                <button type="button" class="size" data-size="27/28" aria-pressed="false">27/28</button>
+                <button type="button" class="size" data-size="29/30" aria-pressed="false">29/30</button>
+                <button type="button" class="size" data-size="31/32" aria-pressed="false">31/32</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><s>R$ 99,90</s><strong>R$ 89,90</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+ <!-- PRODUTO 8 -->
+        <article class="card" data-id="DP-009" data-name="Kit Mãe e Filha Princesa Pink" data-category="Adulto/Infantil" data-price="189.90" data-badge="Promoção" data-sizes="33/34,35/36,37/38">
+          <div class="card__media">
+            <img src="img/mae_filha.png" alt="Kit Mãe e Filha Princesa Pink" loading="lazy" onerror="this.style.display='none'">
+            <span class="tag">Promoção</span>
+            <button type="button" class="card__details" data-action="details"><i class="fa-solid fa-eye"></i> Detalhes</button>
+          </div>
+          <div class="card__body">
+            <span class="card__cat">Adulto/Infantil</span>
+            <h3>Kit Mãe e Filha Princesa Pink</h3>
+            <p class="card__desc">Acompanha 2 pares (1 adulto e 1 infantil) customizados em sintonia artesanal perfeita.</p>
+            <div class="card__buy">
+              <span class="label">Escolha o número da sandália:</span>
+              <div class="sizes" role="group" aria-label="Tamanho">
+                <button type="button" class="size" data-size="33/34" aria-pressed="false">33/34</button>
+                <button type="button" class="size" data-size="35/36" aria-pressed="false">35/36</button>
+                <button type="button" class="size" data-size="37/38" aria-pressed="false">37/38</button>
+                <button type="button" class="size" data-size="39/40" aria-pressed="false" disabled title="Indisponível">39/40</button>
+                <button type="button" class="size" data-size="41/42" aria-pressed="false" disabled title="Indisponível">41/42</button>
+              </div>
+              <div class="card__foot">
+                <div class="price-box"><s>R$ 200,90</s><strong>R$ 189,90</strong></div>
+                <button type="button" class="btn btn--primary btn--sm" data-action="add"><i class="fa-solid fa-bag-shopping"></i> Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+
+      <p id="no-results" class="no-results" hidden>
+        <i class="fa-solid fa-gem"></i>
+        Nenhum modelo encontrado. Tente outra busca ou categoria.
+      </p>
+    </section>
+
+    <!-- NOIVAS & EVENTOS -->
+    <section id="colecao-noivas" class="bridal">
+      <div class="container bridal__grid">
+        <div class="bridal__photos">
+          <!-- FOTOS: img/noivas-01.jpg e img/noivas-02.jpg -->
+          <div class="photo"><img src="img/imperial.png" alt="Noiva com Havaiana customizada" loading="lazy" onerror="this.style.display='none'"></div>
+          <div class="photo photo-offset"><img src="img/luxo.png" alt="Detalhes do bordado de pérolas" loading="lazy" onerror="this.style.display='none'"></div>
+        </div>
+
+        <div class="bridal__text">
+          <span class="pill pill--white">Coleção Especial</span>
+          <h2>Noivas &amp; Eventos: Conforto e Luxo no Seu Casamento</h2>
+          <p>No momento da festa, troque os saltos pelo conforto luxuoso das Havaianas Dinha Pérolas. Produzidas com pérolas ABS e strass cristal que não soltam nem escurecem.</p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i> Kits com descontos especiais para madrinhas e mães dos noivos</li>
+          </ul>
+          <a href="https://wa.me/qr/3ZJHXAC27Y2ZH1" class="btn btn--primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento de Noiva
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section container">
+      <div class="about">
+        <div class="about__photo">
+          <div class="quadro-foto">
+            <img src="img/Claudiana.jpeg" alt="Claudiana Alves (Dinha)">
+          </div>
+          <span class="about__name">Claudiana Alves (Dinha)</span>
+        </div>
+
+        <div class="about__text">
+          <span class="eyebrow">Artesã e Criadora</span>
+          <h2>Amor e Dedicação em Cada Ponto</h2>
+          <p>Olá, eu sou a <strong>Claudiana Alves</strong> popularmente conhecida como <strong>Dinha</strong>! Há anos crio chinelos customizados artesanalmente, com a máxima atenção às pérolas, pontos de costura reforçados e materiais resistentes.</p>
+          <p>Cada par é feito sob encomenda, com carinho, para mulheres de todo o Brasil que buscam delicadeza, exclusividade e conforto — seja para o dia a dia, um presente, aniversários, casamentos ou outros eventos especiais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section container">
+      <header class="section__head">
+        <span class="eyebrow">Serviços</span>
+        <h2>Como Funciona a Sua Compra</h2>
+        <div class="divider"></div>
+        <p>Promoções, pagamento, produção e entrega para todo o Brasil.</p>
+      </header>
+
+      <div class="services">
+        <article class="service">
+          <div class="service__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Personalização</h3>
+          <p>Escolha o modelo, o número da sandália, as cores das pérolas e até iniciais. Tudo feito à mão, sob encomenda.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><i class="fa-solid fa-gift"></i></div>
+          <h3>Presentes e Eventos</h3>
+          <p>Opções para aniversários, casamentos, madrinhas e lembranças, com embalagem para presente.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>Formas de Pagamento</h3>
+          <p>Pix, cartão de crédito e dinheiro (na entrega/retirada). As condições são confirmadas pelo WhatsApp.</p>
+        </article>
+        <article class="service">
+          <div class="service__icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Produção e Entrega</h3>
+          <p>O prazo de produção é informado na confirmação do pedido. Enviamos para todo o Brasil.</p>
+        </article>
+      </div>
+
+    <!-- CONTATO / ENCOMENDA / CADASTRO -->
+    <section id="contato" class="section container">
+      <header class="section__head">
+        <span class="eyebrow">Contato</span>
+        <h2>Fale com a Dinha Pérolas</h2>
+        <div class="divider"></div>
+        <p>Tire dúvidas, peça orçamento ou acompanhe o seu pedido.</p>
+      </header>
+
+      <div class="contact">
+        <a class="contact__item" href="https://wa.me/qr/3ZJHXAC27Y2ZH1" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i><strong>WhatsApp</strong><span>(71) 98301.8961 </span>
+        </a>
+        <a class="contact__item" href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i><strong>Instagram</strong><span>@dinhaperolas</span>
+        </a>
+        <a class="contact__item" href="mailto:contato@dinhaperolas.com.br">
+          <i class="fa-solid fa-envelope"></i><strong>E-mail</strong><span>contato@dinhaperolas.com.br</span>
+        </a>
+      </div>
+
+      <div class="order-box">
+        <header class="section__head section__head--sm">
+          <span class="eyebrow">Encomenda Exclusiva</span>
+          <h2>Cadastro e Pedido Personalizado</h2>
+          <p>Preencha seus dados para o cadastro e descreva o modelo que você deseja. Enviamos tudo direto para o WhatsApp da Dinha Pérolas.</p>
+        </header>
+
+        <form id="custom-order-form" class="form" novalidate>
+          <fieldset class="form__group">
+            <legend>1. Seus dados</legend>
+            <div class="form__row">
+              <label>Nome completo *
+                <input type="text" id="custom-name" placeholder="Ex: Ana Souza" autocomplete="name" required>
+              </label>
+              <label>WhatsApp *
+                <input type="tel" id="custom-phone" placeholder="(00) 00000-0000" autocomplete="tel" required>
+              </label>s
+            </div>
+            <div class="form__row">
+              <label>E-mail
+                <input type="email" id="custom-email" placeholder="voce@email.com" autocomplete="email">
+              </label>
+              <label>Cidade / UF
+                <input type="text" id="custom-address" placeholder="Ex: Feira de Santana - BA" autocomplete="address-level2">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend>2. Seu pedido</legend>
+            <div class="form__row">
+              <label>Numeração *
+                <select id="custom-size" required>
+                  <option value="">Selecione o número</option>
+                  <option value="33/34">23 / 24</option>
+                  <option value="35/36">25 / 26</option>
+                  <option value="37/38">27 / 28</option>
+                  <option value="39/40">29 / 30</option>
+                  <option value="41/42">31 / 32</option>
+                  <option value="33/34">33 / 34</option>
+                  <option value="35/36">35 / 36</option>
+                  <option value="37/38">37 / 38</option>
+                  <option value="39/40">39 / 40</option>
+                  <option value="41/42">41 / 42</option>
+                </select>
+              </label>
+              <label>Cor preferida do chinelo
+                <input type="text" id="custom-color" placeholder="Ex: Branco, Rosa, Ouro">
+              </label>
+            </div>
+            <label>Detalhes do pedido ou ideia
+              <textarea id="custom-details" rows="3" placeholder="Pedrarias, iniciais, tema específico..."></textarea>
+            </label>
+          </fieldset>
+
+          <p id="custom-msg" class="form-msg" role="status"></p>
+
+          <button type="submit" class="btn btn--whatsapp btn--block">
+            <i class="fa-brands fa-whatsapp"></i> Enviar Cadastro e Encomenda para Dinha Pérolas
+          </button>
+          <small class="form__note">Seus dados são usados apenas para cadastro, confirmação da compra, contato e entrega.</small>
+        </form>
+      </div>
+
+      <!-- AVALIAÇÕES -->
+      <div id="avaliacoes" class="reviews">
+        <header class="section__head section__head--sm">
+          <span class="eyebrow">Avaliações</span>
+          <h2>O que as clientes dizem</h2>
+          <div class="stars stars--lg" aria-label="Nota média 4,9 de 5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span>4,9 / 5</span>
+          </div>
+        </header>
+
+        <!-- Para colocar avaliações reais: troque o texto e o nome de cada blockquote -->
+        <div class="reviews__grid">
+          <blockquote class="review">
+            <div class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Chegou lindo e muito bem acabado. Amei os detalhes das pérolas!”</p>
+            <footer>— Carla Santos</footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Presenteei minha madrinha e ela adorou. Atendimento super atencioso.”</p>
+            <footer>— Amanda Moureira</footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Delicado e confortável. Já quero outro par em outra cor.”</p>
+            <footer>— Katia Alves</footer>
+          </blockquote>
+        </div>
+
+        <form id="review-form" class="form review-form" novalidate>
+          <h3>Deixe a sua avaliação</h3>
+          <div class="form__row">
+            <label>Seu nome *
+              <input type="text" id="review-name" autocomplete="name" required>
+            </label>
+            <label>Nota *
+              <select id="review-rating" required>
+                <option value="5">★★★★★ – Excelente</option>
+                <option value="4">★★★★ – Muito bom</option>
+                <option value="3">★★★ – Bom</option>
+                <option value="2">★★ – Regular</option>
+                <option value="1">★ – Ruim</option>
+              </select>
+            </label>
+          </div>
+          <label>Seu comentário *
+            <textarea id="review-text" rows="3" required></textarea>
+          </label>
+          <p id="review-msg" class="form-msg" role="status"></p>
+          <button type="submit" class="btn btn--primary btn--block">Enviar avaliação</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+            <img  class="brand__logo"src="img/logope.png" alt="logo"> 
+          <p>Chinelos Havaianas originais customizados à mão com pérolas e carinho para noivas, festas e momentos especiais.</p>
+        </div>
+        <div>
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Catálogo de Produtos</a></li>
+            <li><a href="#colecao-noivas">Noivas &amp; Eventos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento Dinha</h4>
+          <ul>
+            <li><i class="fa-brands fa-whatsapp"></i> (71) 98301-8961</li>
+            <li><i class="fa-solid fa-envelope"></i> dinhaperolas@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Feira de Santana - BA</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Formas de Pagamento</h4>
+          <p>Pix, cartão de crédito e dinheiro (na entrega /retirada).</p>
+          <div class="pay-icons" aria-hidden="true">
+            <i class="fa-brands fa-pix"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Dinha Pérolas – Todos os direitos reservados.</p>
+        <p>Havaianas Customizadas · Atendemos todo o Brasil</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CARRINHO (gaveta lateral) -->
+  <div id="cart-overlay" class="overlay" aria-hidden="true">
+    <aside id="cart-drawer" class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <header class="drawer__head">
+        <h3 id="cart-title"><i class="fa-solid fa-bag-shopping"></i> Seu Carrinho</h3>
+        <button id="close-cart-btn" class="icon-btn" type="button" aria-label="Fechar carrinho"><i class="fa-solid fa-xmark"></i></button>
+      </header>
+
+      <div id="cart-items" class="drawer__body"></div>
+
+      <footer class="drawer__foot">
+        <div class="totals">
+          <div><span>Subtotal do Pedido:</span><span id="cart-subtotal">R$ 0,00</span></div>
+          <div class="totals__main"><span>Total:</span><strong id="cart-total">R$ 0,00</strong></div>
+        </div>
+        <button id="checkout-btn" class="btn btn--whatsapp btn--block" type="button">
+          <i class="fa-brands fa-whatsapp"></i> Finalizar Pedido via WhatsApp
+        </button>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- DETALHES DO PRODUTO -->
+  <div id="quickview" class="modal" aria-hidden="true">
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+      <button id="qv-close" class="modal__close" type="button" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__media"><img id="qv-image" src="" alt="" onerror="this.style.display='none'"></div>
+      <div class="modal__info">
+        <div>
+          <span id="qv-badge" class="tag tag--static"></span>
+          <h3 id="qv-title"></h3>
+          <div class="stars" aria-label="Avaliação 4,9 de 5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span>(4.9/5)</span>
+          </div>
+          <p id="qv-price" class="qv-price"></p>
+          <p id="qv-description" class="qv-desc"></p>
+
+          <span class="label">Escolha o número da sandália:</span>
+          <div id="qv-sizes" class="sizes sizes--grid"></div>
+
+          <label class="qv-notes">Observações / Personalização:
+            <input type="text" id="qv-notes" placeholder="Ex: cor das pérolas, iniciais...">
+          </label>
+        </div>
+        <button id="qv-add" class="btn btn--primary btn--block" type="button"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVISO -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message"></span>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Início do Código VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
